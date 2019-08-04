@@ -1,0 +1,104 @@
+Abrir terminal: CTRL + ALT + T
+
+Desligar o computador:
+
+	shutdown -h now
+
+Reiniciar o computador:
+
+	shutdown -r now
+
+Executar programa em segundo plano:
+
+	"nome_do_programa" &
+	Exemplo: firefox &
+
+Alterar permissões:
+
+	rwx:
+		chmod 777 "nome_do_arquivo"
+		Para lembrar: user:group:others
+	dono:
+		chown user:group "nome_do_arquivo"
+
+Para listar todos os programas:
+	dpkg --list
+	OBS: dpkg trabalha em camada mais baixa que apt.
+
+Para desinstalar um app:
+
+	via apt-get:
+		apt-get --purge remove "nome_do_programa"
+			OBS: parâmetro purge remove até mesmo o
+			arquivo de configuração
+
+	via dpkg:
+		dpkg -r/-P "nome_do_programa"
+
+Instalar programa via source code (tar.gz):
+(Utilizei com o nodejs)
+	
+	extrair:
+		tar -xxvf "nome_do_arquivo.tar.gz"
+		(extrai o arquivo)
+
+	dentro da pasta extraida:
+		./configure
+	seguinte:
+		make
+	instalar:
+		make install
+
+Para chamar um script:
+
+	bash "nome_do_arquivo"
+	OBS: os arquivos script possuem extensões .sh
+	Utilizamos o comando bash quando o script não tem comentário
+	funcional.
+	
+	comentário funcional que elimina o comando bash:
+		#!/bin/bash
+	chamar sem bash:
+		./"nome_do_arquivo"
+
+Para abrir o banco de dados via prompt:
+
+	mysql -h localhost -u root -p
+		
+Para executar o postman:
+(necessário estar dentro da pasta app do postman)
+	
+	./Postman
+
+Para solucionar o problema da libgconfig2.so:
+
+	sudo apt-get install gconf2
+	
+Para instalar o opera (arquivo .deb):
+
+	sudo dpgk -i "nome_do_arquivo.deb"
+
+Navegar entre workspaces:
+	tecla do windows + pagedown/pageup
+	mover a programa selecionado para outro workspace:
+		tecla do windows + shift + pagedown/pageup 
+
+controlar posicionamento da janela:
+	tecla do windows + setas
+
+listar diretórios:
+	ls -la - mostra todos os diretórios, inclusive os escondidos
+		*diretório escondido tem o nome iniciado em "."
+	ls -l - mostra todos os diretórios não escondidos
+
+ver manual de um comando:
+	man "comando"
+
+"$"(Cifrão) denota variável de ambiente.
+
+Bash - Bourne Again Shell. - Pode executar binários do sistema,
+	scripts com permissão de execução , comandos diretos do
+	bash ou shell que estivermos.
+
+Link simbólico = atalho.
+

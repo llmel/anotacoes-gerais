@@ -1,0 +1,20 @@
+word-wrap = quebra de linha
+thus = portanto
+even = número par
+quotation mark = aspa 
+in addiction = além disso 
+within = dentro
+whether = se 
+vírgula = comma
+ponto e vírgula = semicolon 
+iterate = repetir
+much like = muito parecido
+spot = detectar/identificar 
+helpful = útil
+regardless = independentemente 
+bound = limite
+curly braces = chaves
+brackets = colchetes
+further = mais, em maiores
+pattern = padronizar,modelo,exemplo
+recall - recordar
