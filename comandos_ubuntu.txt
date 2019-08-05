@@ -102,3 +102,54 @@ Bash - Bourne Again Shell. - Pode executar binários do sistema,
 
 Link simbólico = atalho.
 
+Gerenciador de temas Ubuntu: (gnome-tweak-tool)
+	sudo apt install gnome-tweak-tool
+
+	OBS: os temas e icones só são reconhecidos se 
+	estiverem na pasta home(~).
+
+Diretório escondido: possui um ponto na frente do nome (ex: .icons ; .themes)
+
+Melhor maneira de criar um arquivo vazio é através do comando touch.
+
+comando pwd - print working directory (imprimir diretório corrente).
+
+Todos os dispositivos conectados estão na pasta /dev (reducao de device).
+Quando os dispositivos são montados com algum sistema de arquivos, é criado um subdiretório
+nas pastas /mnt e /media.
+Configurações dos dispositivos montados automaticamente ficam na pasta /etc/fstab.
+
+comando 'df -h' - Lista os dispositivos que estão montados e quais são os pontos de montagem.
+
+O diretório /root é a home do administrador do sistema.
+O diretório /opt é onde alguns programas de fora são instalados.
+O diretório /sbin é onde ficam muitos dos binários do sistema operacional.
+O diretório /bin é onde ficam muitos outros binários do sistema operacional.
+O diretório /usr (Unix System Resources) é onde ficam a maioria das aplicações instaladas.
+O diretório /etc é comumente aceito como etcetera, é onde fica todo o resto.
+O diretório /var guarda arquivos variáveis. (PID - Process ID - Identificador de Processos).
+O diretório /proc os processos são representados como diretórios.
+O diretório /tmp guarda arquivos temporários.
+
+Comando 'ps'. Lista os processos dos aplicativos que estão em execução.
+
+Comando 'cat' (concatenate) - Objetivo original era concatenar arquivos, mas é bastante utilizado
+para olhar arquivos de texto pequenos. (Evite usar cat em arquivos grandes, porque ele precisa ler
+tudo em memória antes de mostrar).
+Comando 'more' - Mostra arquivos texto. Igual ao cat, precisa ler tudo em memória antes de mostrar.
+Comando 'less' - Mostra arquivos texto, mas sem carregar tudo na memória, puxa só o que precisa para
+mostrar na tela, a partir das streams. Nesse caso 'less is more'.
+
+Para concatenar no fim do arquivo ao inves de sobrescrever:
+	touch a1.txt - cria um arquivo vazio.
+	echo "hello world" > a1.txt - concatena sobrescrevendo.
+	echo "leonardo melo" >> a1.txt - concatena sem sobrescrever.
+
+Criando links simbólicos:
+	ln -s 'arquivo_origem' 'nome_link'
+
+Comando 'tail' - Navegar com parâmetros em um arquivo texto.
+
+O bash é um Shell.
+
+CTRL + R no bash permite pesquisar no histórico de comandos digitados. 
