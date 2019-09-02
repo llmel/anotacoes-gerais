@@ -1,4 +1,3 @@
-
 Abrir terminal: CTRL + ALT + T
 
 Desligar o computador:
@@ -208,13 +207,6 @@ Multiplexer de terminal:
 
 Vim:
 	Teclas H,J,K e L funcionam como setas.	
-
-
-Rodar Serviços de Streaming:
-	sudo apt install ubuntu-restricted-extras -y
-	São codecs de h264,mp3 e outros que não são free-software,
-	por isso são repositórios restritos. Na instalação base,
-	só vem instalado o que é 100% código aberto.
 
 
 
