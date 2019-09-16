@@ -217,6 +217,9 @@ Rodar Serviços de Streaming:
 	só vem instalado o que é 100% código aberto.
 
 
+Binário Screenfetch:
+	Mostra informações de hardware
+
 
 --end
 
