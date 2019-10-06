@@ -36,7 +36,7 @@ Para desinstalar um app:
 	via dpkg:
 		dpkg -r/-P "nome_do_programa"
 
-Instalar programa via source code (tar.gz):
+Instalar programa via source code (tar.gz):      ( Esses comandos compilam o programa )
 (Utilizei com o nodejs)
 	
 	extrair:
@@ -220,8 +220,10 @@ Rodar Serviços de Streaming:
 Binário Screenfetch:
 	Mostra informações de hardware
 
+Para executar arquivos .run:
+	Necessário dar permissão de execução do arquivo;
+	Executar via terminal com o comando: ./nome_do_arquivo.run	
+
+SQL SERVER: #Gf12345
 
 --end
-
-
-
