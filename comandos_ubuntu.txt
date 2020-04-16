@@ -226,4 +226,27 @@ Para executar arquivos .run:
 
 SQL SERVER: #Gf12345
 
+Extrair arquivos .zip:
+	unzip <nome_arquivo>
+
+Definir Shell padrão para determinado usuário:
+	sudo usermod -s /usr/bin/zsh $(whoami)
+	O caminho do binário do shell é encontrado com o comando which ou com o whereis.
+
+Reiniciar:
+	sudo reboot
+
+Exibir/Ocultar itens ocultos no aplicativo "Aplicativos iniciados em sessão":
+	Exibir: 
+		cd /etc/xdg/autostart
+		sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop
+	Ocultar:
+		cd /etc/xdg/autostart
+		sudo sed --in-place 's/NoDisplay=false/NoDisplay=true/g' *.desktop
+
+Adicionar variável de ambiente:
+	/etc/environment
+
+
+
 --end
